@@ -17,6 +17,7 @@
 		8173D4472B6FE57E00DA8EC1 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173D4462B6FE57E00DA8EC1 /* CustomButtonView.swift */; };
 		8173D4492B71298200DA8EC1 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173D4482B71298200DA8EC1 /* GradientButtonStyle.swift */; };
 		8173D44B2B71356D00DA8EC1 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173D44A2B71356D00DA8EC1 /* CustomCircleView.swift */; };
+		8173D44D2B7170C300DA8EC1 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173D44C2B7170C300DA8EC1 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8173D4462B6FE57E00DA8EC1 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		8173D4482B71298200DA8EC1 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		8173D44A2B71356D00DA8EC1 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
+		8173D44C2B7170C300DA8EC1 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				8173D4272B6FB05600DA8EC1 /* CustomBackgroundView.swift */,
 				8173D4462B6FE57E00DA8EC1 /* CustomButtonView.swift */,
 				8173D44A2B71356D00DA8EC1 /* CustomCircleView.swift */,
+				8173D44C2B7170C300DA8EC1 /* MotionAnimationView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				8173D4172B6FAC7A00DA8EC1 /* HikeApp.swift in Sources */,
 				8173D4472B6FE57E00DA8EC1 /* CustomButtonView.swift in Sources */,
 				8173D4492B71298200DA8EC1 /* GradientButtonStyle.swift in Sources */,
+				8173D44D2B7170C300DA8EC1 /* MotionAnimationView.swift in Sources */,
 				8173D4282B6FB05600DA8EC1 /* CustomBackgroundView.swift in Sources */,
 				8173D42B2B6FD7E900DA8EC1 /* ColorExtension.swift in Sources */,
 			);
