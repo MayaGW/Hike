@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct SettingsView: View {
+    //MARK: - PROPERTIES
+    private let alternateAppicons: [String] = ["AppIcon-MagnifyingGlass",
+    "AppIcon-Map",
+    "AppIcon-Mushroom",
+    "AppIcon-Camera",
+    "AppIcon-Backpack",
+    "AppIcon-Campfire"
+  ]
+  
     var body: some View {
         
         List{
@@ -53,6 +62,41 @@ struct SettingsView: View {
             }//Header
             .listRowSeparator(.hidden)
             //Mark : - Section:  Icons
+            
+            Section(header: Text("Alternate Icons")){
+                ScrollView(.horizontal,showsIndicators: false){
+                    HStack (spacing: 12){
+                        ForEach(alternateAppicons.indices,id: \.self) { item in
+                            Button{
+                                print("Icon is \(alternateAppicons[item]) pressed")
+                                UIApplication.shared.setAlternateIconName(alternateAppicons[item]) { error in
+                                  if error != nil {
+                                    print("Failed request to update the app's icon: \(String(describing: error?.localizedDescription))")
+                                  } else {
+                                    print("Success! You have changed the app's icon to \(alternateAppicons[item])")
+                                  }
+                                }
+                            }
+                        label:{
+                            Image("\(alternateAppicons[item])-Preview")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(16)
+                    }.buttonStyle(.borderless)
+                        }
+                    }
+                }// SCROLL VIEW
+                .padding(.top,12)
+                
+                Text("Choose your favorite app icon from the collection above")
+                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom,12)
+            }.listSectionSeparator(.hidden)
+            
             //Mark : - Section:  About
             Section(
                 header: Text("About the App"),
